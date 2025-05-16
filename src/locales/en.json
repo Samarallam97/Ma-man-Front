@@ -1,0 +1,65 @@
+{
+  "app": {
+    "name": "Ma'man",
+    "tagline": "Safe Haven for Knowledge"
+  },
+  "nav": {
+    "modules": "Modules",
+    "profile": "Profile",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "todos": "To-Do List",
+    "diary": "Diary",
+    "logout": "Logout",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language"
+  },
+  "modules": {
+    "title": "Browse Modules",
+    "search": "Search modules...",
+    "filter": "Filter",
+    "sort": "Sort",
+    "perPage": "Per page",
+    "prev": "Previous",
+    "next": "Next",
+    "emptyState": "No modules found.",
+    "tryAgain": "Try adjusting your filters or search."
+  },
+  "moduleContent": {
+    "videos": "Videos",
+    "books": "Books",
+    "audio": "Audio",
+    "comments": "Comments",
+    "rating": "Rating",
+    "yourRating": "Your Rating",
+    "submit": "Submit",
+    "writeComment": "Write a comment...",
+    "next": "Next",
+    "previous": "Previous",
+    "complete": "Complete",
+    "markAsComplete": "Mark as Complete",
+    "outOf": "of",
+    "noContent": "No content available",
+    "averageRating": "Average Rating"
+  },
+  "comments": {
+    "title": "Comments",
+    "placeholder": "Share your thoughts...",
+    "submit": "Post Comment",
+    "empty": "No comments yet. Be the first to comment!",
+    "reply": "Reply",
+    "replyTo": "Reply to",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure you want to delete this comment?",
+    "edited": "Edited"
+  },
+  "errors": {
+    "notFound": "Page not found",
+    "goHome": "Go to Home",
+    "generic": "Something went wrong",
+    "retry": "Retry"
+  }
+}

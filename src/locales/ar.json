@@ -1,0 +1,65 @@
+{
+  "app": {
+    "name": "مأمن",
+    "tagline": "ملاذ آمن للمعرفة"
+  },
+  "nav": {
+    "modules": "الوحدات",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "notifications": "الإشعارات",
+    "todos": "قائمة المهام",
+    "diary": "المذكرات",
+    "logout": "تسجيل الخروج",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح",
+    "language": "اللغة"
+  },
+  "modules": {
+    "title": "تصفح الوحدات",
+    "search": "بحث في الوحدات...",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "perPage": "لكل صفحة",
+    "prev": "السابق",
+    "next": "التالي",
+    "emptyState": "لم يتم العثور على وحدات.",
+    "tryAgain": "حاول ضبط عوامل التصفية أو البحث."
+  },
+  "moduleContent": {
+    "videos": "فيديو",
+    "books": "كتب",
+    "audio": "صوتيات",
+    "comments": "التعليقات",
+    "rating": "التقييم",
+    "yourRating": "تقييمك",
+    "submit": "إرسال",
+    "writeComment": "اكتب تعليقاً...",
+    "next": "التالي",
+    "previous": "السابق",
+    "complete": "إكمال",
+    "markAsComplete": "تحديد كمكتمل",
+    "outOf": "من",
+    "noContent": "لا يوجد محتوى متاح",
+    "averageRating": "متوسط التقييم"
+  },
+  "comments": {
+    "title": "التعليقات",
+    "placeholder": "شارك أفكارك...",
+    "submit": "نشر التعليق",
+    "empty": "لا توجد تعليقات بعد. كن أول من يعلق!",
+    "reply": "الرد",
+    "replyTo": "الرد على",
+    "cancel": "إلغاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذا التعليق؟",
+    "edited": "تم التعديل"
+  },
+  "errors": {
+    "notFound": "الصفحة غير موجودة",
+    "goHome": "الذهاب إلى الرئيسية",
+    "generic": "حدث خطأ ما",
+    "retry": "إعادة المحاولة"
+  }
+}
