@@ -6,8 +6,7 @@ import './index.css'
 import { setupMocks } from './mocks/browser'
 import { ThemeProvider } from './context/ThemeContext'
 import { LanguageProvider } from './context/LanguageContext'
-import { ApiProvider } from './context/ApiContext'
-import './i18n'
+// import { ApiProvider } from './context/ApiContext'
 
 // Initialize mock service worker in development
 if (import.meta.env.DEV) {
@@ -17,13 +16,13 @@ if (import.meta.env.DEV) {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <ApiProvider>
+           {/* <ApiProvider> */}
         <LanguageProvider>
           <ThemeProvider>
             <App />
           </ThemeProvider>
         </LanguageProvider>
-      </ApiProvider>
+      {/* </ApiProvider> */}
     </BrowserRouter>
   </StrictMode>,
 )

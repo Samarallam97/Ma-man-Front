@@ -1,10 +1,5 @@
 // Mock API service for modules
-
-export async function fetchModules() {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 800))
-  
-  return [
+const modules = [
     {
       id: '1',
       title: 'Introduction to Programming',
@@ -116,6 +111,16 @@ export async function fetchModules() {
       ratingCount: 118
     }
   ]
+
+export async function fetchModules(category) {
+  // Simulate API delay
+  await new Promise(resolve => setTimeout(resolve, 800))
+  
+  if (category) {
+    return modules.filter(m => m.category === category);
+  }
+  return modules;
+
 }
 
 export async function fetchModuleById(id) {

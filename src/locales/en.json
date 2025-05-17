@@ -4,7 +4,6 @@
     "tagline": "Safe Haven for Knowledge"
   },
   "nav": {
-    "modules": "Modules",
     "profile": "Profile",
     "settings": "Settings",
     "notifications": "Notifications",
@@ -15,6 +14,127 @@
     "lightMode": "Light Mode",
     "language": "Language"
   },
+  "intro": 
+    {
+      "title": "Welcome to Ma'man",
+      "description": "A trusted place for young minds to explore, learn, and thrive" 
+    },
+  "rules" :{
+      "title": "Platform Rules",
+      "description": "Guidelines to ensure a safe and productive learning environment",
+      "points": [
+        "Be respectful to others",
+        "Focus on learning",
+        "Ask questions when unsure",
+        "Share knowledge with peers",
+        "Take breaks when needed",
+        "Take breaks when needed",
+        "Take breaks when needed",
+        "Take breaks when needed"
+      ]
+  },
+  "vision" :{
+      "title": "Our Vision",
+      "description": "Creating a world where every child has access to quality education",
+      "points": [
+        "Accessible education for all",
+        "Personalized learning experiences",
+        "Building critical thinking skills",
+        "Supporting lifelong learning habits"
+      ]
+  },
+  "goal" :{
+      "title": "Our Goals",
+      "description": "Empowering the next generation through education and technology",
+      "points": [
+        "Reach 1 million children by 2028",
+        "Develop comprehensive curriculum for ages 5-15",
+        "Continuous improvement through feedback",
+        "Create engaging and effective learning materials",
+        "Continuous improvement through feedback",
+        "Create engaging and effective learning materials"
+      ]
+  },
+  "about" :{
+    "title": "About Ma'man",
+    "description": "In today’s digital age, where unrestricted content flows freely online, children are increasingly exposed to material that may not be suitable for their development. At Ma'man, we believe in creating a safer, more thoughtful space where young minds can express themselves freely without unnecessary risks.",
+     "team": [
+      {
+        "name": "Farida Helmy",
+        "role": "Frontend",
+        "image": "https://placehold.co/400x300?text=Frontend "
+      },
+      {
+        "name": "Thoraya Ramadan",
+        "role": "Frontend",
+        "image": "https://placehold.co/400x300?text=Frontend "
+      },
+      {
+        "name": "Habiba Elsharkawy",
+        "role": "Frontend",
+        "image": "https://placehold.co/400x300?text=Frontend "
+      },
+      {
+        "name": "Salma Waleed",
+        "role": "Frontend",
+        "image": "https://placehold.co/400x300?text=Frontend "
+      },
+      {
+        "name": "Salma Mohamed",
+        "role": "Backend",
+        "image": "https://placehold.co/400x300?text=Backend "
+      },
+      {
+        "name": "Samar Shaaban",
+        "role": "Backend",
+        "image": "https://placehold.co/400x300?text=Backend "
+      },
+      {
+        "name": "Arwa Gnana",
+        "role": "Backend",
+        "image":"https://placehold.co/400x300?text=Backend "
+      }
+    ]
+  },
+  "next" : "next",
+  "prev" : "previous",
+  "footer" :{
+    "support_us" : "support_us",
+    "contact_us" : "contact-us",
+    "join_us" : "join_us"
+  },
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "sign_in": "Sign In",
+    "signing_in": "Signing In...",
+    "forgot_password": "Forgot Password?",
+    "register": "Register"
+  },
+    "register": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "date_of_birth": "Date of Birth",
+    "role": "Role",
+    "select_role": "Select Role",
+    "adult": "Teen (14–18 years)",
+    "parent": "Parent (18+)",
+    "register": "Register",
+    "registering": "Registering...",
+    "already_have_account": "Already have an account?",
+    "login": "Login"
+  },
+   "reset_password": {
+    "reset_password_description": "Enter your email address to receive a password reset link.",
+    "reset_password_success": "If an account exists for the provided email, a password reset link has been sent.",
+    "email": "Email",
+    "send_reset_link": "Send Reset Link",
+    "sending": "Sending...",
+    "back_to_login": "Back to login"
+  }
+  ,
   "modules": {
     "title": "Browse Modules",
     "search": "Search modules...",
@@ -24,6 +144,17 @@
     "prev": "Previous",
     "next": "Next",
     "emptyState": "No modules found.",
+    "tryAgain": "Try adjusting your filters or search."
+  },
+    "categories": {
+    "title": "Browse Categories",
+    "search": "Search categories...",
+    "filter": "Filter",
+    "sort": "Sort",
+    "perPage": "Per page",
+    "prev": "Previous",
+    "next": "Next",
+    "emptyState": "No categories found.",
     "tryAgain": "Try adjusting your filters or search."
   },
   "moduleContent": {
@@ -61,5 +192,28 @@
     "goHome": "Go to Home",
     "generic": "Something went wrong",
     "retry": "Retry"
+  },
+  "todos" : {
+    "title" : "Title",
+    "add" : "Add",
+    "empty" : "Empty"
+  },
+  "diary" :{
+    "title" : "Title",
+    "add" : "Add",
+    "empty" : "Empty",
+    "search" : "Search"
+  },
+  "notifications" : {
+    "markAllRead" : "MarkAllRead",
+    "title" : "Notifications",
+    "clearAll" : "ClearAll",
+    "empty" : "Empty",
+    "actions" : {
+      "markRead" : "MarkRead",
+      "delete" : "Delete",
+      "clear" : "Clear",
+      "retry" : "Retry"
+    }
   }
 }
