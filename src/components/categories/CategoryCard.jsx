@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FiStar, FiClock, FiUser ,FiArrowRight} from 'react-icons/fi'
+import { FiArrowRight} from 'react-icons/fi'
 
 function CategoryCard({ category }) {
   const [isHovered, setIsHovered] = useState(false)
   
   return (
-    <Link to={`/modules?category_id=${category.id}`}>
-    <div className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-xl">
+    <Link to={`/modules`}>
+    <div className="bg-[var(--card-background)] shadow-md rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-xl">
       {/* Image */}
       <div className="relative group">
         <img
@@ -19,7 +19,7 @@ function CategoryCard({ category }) {
        
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
         <div className="flex items-center justify-center h-full">
-            <button className="flex items-center gap-2 text-white text-lg font-semibold px-6 py-3 bg-[var(--primary-color)] rounded-md shadow-lg hover:bg-[var(--primary-dark)] transition-all duration-300 ease-in-out">
+            <button className="flex items-center gap-2 text-white text-lg font-semibold px-6 py-3  rounded-md shadow-lg hover:bg-[var(--primary-dark)] transition-all duration-300 ease-in-out">
             Explore <FiArrowRight className="group-hover:animate-shake" />
             </button>
         </div>

@@ -1,5 +1,3 @@
-// Mock API service for modules
-
 export async function fetchCategories() {
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 800))
@@ -118,4 +116,4 @@ export async function fetchCategoryById(id) {
         ratingCount: 118
         }]
     }
-  }
+  }   

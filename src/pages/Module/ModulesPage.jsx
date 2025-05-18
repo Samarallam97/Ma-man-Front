@@ -3,11 +3,9 @@ import { useTranslation } from 'react-i18next'
 import ModuleCard from '../../components/modules/ModuleCard'
 import ModuleFilter from '../../components/modules/ModuleFilter'
 import Pagination from '../../components/common/Pagination'
-import { fetchModules } from '../../services/moduleService'
+import { fetchModules } from '../../services/moduleService.js'
 import LoadingSpinner from '../../components/common/LoadingSpinner'
 import ErrorMessage from '../../components/common/ErrorMessage'
-import { useParams } from 'react-router-dom'
-
 
 function ModulesPage() {
   const { t } = useTranslation()
@@ -19,13 +17,12 @@ function ModulesPage() {
   const [searchTerm, setSearchTerm] = useState('')
   const [itemsPerPage, setItemsPerPage] = useState(8)
 
-  const { category } = useParams()
   // Fetch modules on component mount
   useEffect(() => {
     const getModules = async () => {
       try {
         setLoading(true)
-        const data = await fetchModules(category)
+        const data = await fetchModules()
         setModules(data)
         setFilteredModules(data)
         setLoading(false)
@@ -36,7 +33,7 @@ function ModulesPage() {
     }
 
     getModules()
-  }, [category])
+  }, [])
 
   // Filter modules when search term changes
   useEffect(() => {

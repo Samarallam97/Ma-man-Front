@@ -31,6 +31,7 @@ import Notifications from './pages/User//Notifications'
 import Todos from './pages/User/Todos.jsx'
 import Diary from './pages/User/Diary'
 import NotFoundPage from './pages/NotFoundPage'
+import TimeLimitExceeded from './pages/TimeLimitExceeded/TimeLimitExceeded.jsx'
 
 
 // Layouts
@@ -57,7 +58,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
 
           <Route element={<MainLayout />}>
-              <Route path="/modules/:category?" element={<ModulesPage />} />
+              <Route path="/modules" element={<ModulesPage />} />
               <Route path="/modules/:moduleId" element={<ModuleContentPage />} />
               <Route path="/categories" element={<CategoriesPage />} />
               <Route path="/profile" element={<Profile />} />
@@ -79,6 +80,8 @@ function App() {
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/join-us" element={<JoinUs />} />
               <Route path="*" element={<NotFoundPage />} />
+             <Route path="time-exceeded" element={<TimeLimitExceeded />} />
+
           </Route>
         </Routes>
     </div>

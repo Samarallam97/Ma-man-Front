@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState  , useEffect} from 'react'
+import { Link , useNavigate} from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '../../context/ThemeContext'
 import { useLanguage } from '../../context/LanguageContext'
@@ -15,14 +15,41 @@ import {
   FiUser,
   FiLogOut,
   FiMenu,
-  FiX
+  FiX ,
+  FiClock
 } from 'react-icons/fi'
+
+const TIMER_MINUTES = 60 // Set the initial timer value in minutes
 
 export default function Navbar() {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const { theme, toggleTheme } = useTheme()
   const { language, toggleLanguage } = useLanguage()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [timeLeft, setTimeLeft] = useState(TIMER_MINUTES * 60) // Convert to seconds
+
+    useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        if (prevTime <= 1) {
+          clearInterval(timer)
+          navigate('/time-exceeded')
+          return 0
+        }
+        return prevTime - 1
+      })
+    }, 1000)
+
+    return () => clearInterval(timer)
+  }, [navigate])
+
+    const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60)
+    const remainingSeconds = seconds % 60
+    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
+  }
+  
   return (
     <header 
       className="sticky top-0 z-50 px-6 bg-[var(--primary-color)] text-white shadow-md transition-shadow duration-300"
@@ -52,6 +79,12 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-4 md:space-x-2 rtl:space-x-reverse mt-4 md:mt-0">
             
+                        {/* Timer */}
+            <div className="flex items-center text-white dark:text-gray-200">
+              <FiClock className="w-5 h-5 mr-2" />
+              <span>{formatTime(timeLeft)}</span>
+            </div>
+
              <Link to="/todos" className="nav-icon p-2 rounded-full text-white hover:bg-white hover:bg-opacity-20 hover:text-white transition-colors" title={t('nav.todos')}>
               <FiCheckSquare size={20} />
              </Link>
