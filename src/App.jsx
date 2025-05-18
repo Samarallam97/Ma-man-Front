@@ -26,7 +26,7 @@ import ForgotPassword from './pages/Auth/ForgotPassword';
 import CategoriesPage from './pages/Category/CategoriesPage'
 import ModulesPage from './pages/Module/ModulesPage'
 import ModuleContentPage from './pages/Module/ModuleContentPage'
-import Profile from './pages/Profile'
+import Profile from './pages/User/Profile.jsx'
 import Notifications from './pages/User//Notifications'
 import Todos from './pages/User/Todos.jsx'
 import Diary from './pages/User/Diary'
